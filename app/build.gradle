@@ -1,0 +1,116 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.hi.mvvmkotlin"
+        minSdkVersion 26
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "androidx.core:core-ktx:$support_version"
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation "androidx.test.espresso:espresso-core:$espressoVersion"
+
+    //ANDROID DEFAULT
+    implementation "androidx.appcompat:appcompat:$support_version"
+    implementation "androidx.annotation:annotation:$support_version"
+    implementation "com.google.android.material:material:$support_materil_desgin"
+    implementation "androidx.cardview:cardview:1.0.0"
+    implementation "androidx.recyclerview:recyclerview:1.0.0"
+    implementation "androidx.constraintlayout:constraintlayout:$constraintLayoutVersion"
+    implementation "com.android.support:palette-v7:$support_version"
+    implementation "com.android.support:design:$support_materil_desgin"
+
+    implementation "com.google.dagger:dagger-android:$dagger_version"
+    implementation "com.google.dagger:dagger-android-support:$dagger_version"
+    kapt "com.google.dagger:dagger-android-processor:$dagger_version"
+
+    //ROOM
+    kapt "androidx.room:room-compiler:$room_version"
+    implementation "androidx.room:room-runtime:$room_version"
+
+    // VIEWMODEL AND LIVEDATA
+    implementation "android.arch.lifecycle:livedata:$lifecycle_version"
+    implementation "android.arch.lifecycle:viewmodel:$lifecycle_version"
+    implementation "android.arch.lifecycle:extensions:$lifecycle_version"
+
+    //RETROFIT and OKHTTP
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+    implementation "com.squareup.okhttp3:logging-interceptor:4.1.0"
+    implementation "com.squareup.okhttp:logging-interceptor:2.6.0"
+    implementation "com.google.code.gson:gson:2.8.6"
+    implementation "com.squareup.okhttp3:okhttp:4.1.0"
+
+    //GLIDE
+    kapt "com.github.bumptech.glide:compiler:$glideVersion"
+    implementation "com.github.bumptech.glide:glide:$glideVersion"
+
+    //CIRCLE IMAGEVIEW
+    implementation "de.hdodenhof:circleimageview:$circleimageview"
+
+    //TIMBER
+    implementation "com.jakewharton.timber:timber:$timber_version"
+
+    //LOADER
+    implementation 'com.github.ybq:Android-SpinKit:1.2.0'
+    implementation 'com.jakewharton.rxbinding:rxbinding:0.4.0'
+    implementation 'com.jakewharton.retrofit:retrofit2-rxjava2-adapter:1.0.0'
+    implementation "com.amitshekhar.android:rx2-android-networking:1.0.2"
+
+    //REACTIVE
+    implementation "io.reactivex.rxjava2:rxjava:2.2.9"
+    implementation "io.reactivex.rxjava2:rxandroid:2.1.1"
+
+    //DAGGER
+    implementation "com.google.dagger:dagger:$dagger_version"
+    kapt "com.google.dagger:dagger-compiler:$dagger_version"
+    kapt "com.google.dagger:dagger-android-processor:$dagger_version"
+    implementation "com.google.dagger:dagger-android-support:$dagger_version"
+    testAnnotationProcessor "com.google.dagger:dagger-compiler:$dagger_version"
+    implementation "org.apache.poi:poi:$apache"
+    implementation "org.apache.poi:poi-ooxml:$apache"
+
+    //KOTLIN DATA BINDING
+    kapt 'com.android.databinding:compiler:3.1.4'
+
+    //SCALABLE SIZE UNIT
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+
+    //ANDROID UTIL CODE
+    implementation 'com.blankj:utilcode:1.23.4'
+
+    //FANCY FAB MENU AND BUTTON
+    implementation 'com.github.clans:fab:1.6.4'
+
+    //FACEBOOK DATABASE VIEWER
+    implementation 'com.facebook.stetho:stetho:1.5.1'
+}

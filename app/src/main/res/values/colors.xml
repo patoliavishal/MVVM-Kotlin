@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--default color-->
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorAccent">#000000</color>
+    <!--<color name="colorAccent">#ff2A2A2A</color>-->
+    <color name="colorAccentLight">#99790000</color>
+    <color name="colorAccentDark">#FF790000</color>
+    <!--<color name="windowBackground">#e0e0e0</color>-->
+    <color name="windowBackground">#EBF0F4</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="textColorPrimary">#202020</color>
+    <color name="textColorSecondary">#959AB1</color>
+    <color name="textColorTertiary">#757575</color>
+    <color name="backgroundLiner">#F5F5F5</color>
+
+    <color name="textColorPrimaryInverse">#FFFFFFFF</color>
+    <color name="textColorSecondaryInverse">#99FFFFFF</color>
+    <color name="textColorTertiaryInverse">#80FFFFFF</color>
+
+    <color name="errorColor">#AA000000</color>
+    <color name="textColorLink">#0288D1</color>
+    <color name="textColorHint">#BDBDBD</color>
+    <color name="textColorHighlight">#BDBDBD</color>
+    <color name="textDisabled">#61000000</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="semiWhite">#90FFFFFF</color>
+    <color name="semiBlack">#90000000</color>
+    <color name="light_grey">#EFEFEF</color>
+    <color name="dark_grey">#90555555</color>
+    <color name="black">#000000</color>
+    <color name="green">#32CD32</color>
+    <color name="red">#ffe21e23</color>
+    <color name="dialog_bg">#70000000</color>
+    <color name="divider">#757575</color>
+
+    <color name="md_grey_300">#e0e0e0</color>
+    <color name="md_black_1000">#000000</color>
+    <color name="md_grey_600">#757575</color>
+    <color name="md_white_1000">#FFFFFF</color>
+    <color name="md_grey_100">#F5F5F5</color>
+    <color name="md_grey_500">#9e9e9e</color>
+
+    <!--Error View-->
+    <color name="error_view_title">#cc000000</color>
+    <color name="error_view_subtitle">#78000000</color>
+    <color name="error_view_retry">#790000</color>
+    <color name="error_view_retry_button_background">#40000000</color>
+    <color name="error_view_retry_button_background_stroke">#50000000</color>
+</resources>

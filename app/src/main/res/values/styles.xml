@@ -1,0 +1,31 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="coordinatorLayoutStyle">@style/Widget.Support.CoordinatorLayout</item>
+        <item name="cardViewStyle">@style/CardView</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Widget.Support.CoordinatorLayout" parent="android:Widget">
+        <item name="statusBarBackground">#000000</item>
+    </style>
+
+    <style name="PSButton.Black" parent="@style/Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/md_black_1000</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="PSButton.Default.Borderless" parent="@style/Widget.AppCompat.Button.Borderless.Colored">
+        <item name="android:textColor">@color/md_grey_600</item>
+    </style>
+</resources>
