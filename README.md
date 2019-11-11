@@ -9,13 +9,9 @@ This MVVM architecture project created using Dagger2, Room, RxJava, Retrofit, Da
 4. Data Listing
 
 <p align="center">
-  <img src="/art/splash.png" width="250">
   <img src="/art/signin.png" width="250">
   <img src="/art/signup.png" width="250">
-</p>
-<br>
-<p align="left">
-<img src="/art/fakelist.png" width="250">
+  <img src="/art/fakelist.png" width="250">
 </p>
 
 ### Library reference resources:
