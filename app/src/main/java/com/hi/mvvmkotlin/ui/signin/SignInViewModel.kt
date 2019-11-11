@@ -38,9 +38,7 @@ class SignInViewModel(
     }
 
     fun isCheckEmailPassword(email: String, password: String) {
-        if (TextUtils.isEmpty(email) || !Patterns.EMAIL_ADDRESS.matcher(email).matches() &&
-            TextUtils.isEmpty(password) || password.length < 6
-        ) {
+        if (TextUtils.isEmpty(email) && TextUtils.isEmpty(password)) {
             navigator?.handleError(throwable = Throwable(MVVMKotlin.getInstance().getString(R.string.invalid_email_password)))
         } else if (TextUtils.isEmpty(email) || !Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
             navigator?.handleError(throwable = Throwable(MVVMKotlin.getInstance().getString(R.string.invalid_email)))

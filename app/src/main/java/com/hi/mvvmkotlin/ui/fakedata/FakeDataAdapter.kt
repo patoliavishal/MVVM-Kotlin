@@ -2,7 +2,9 @@ package com.hi.mvvmkotlin.ui.fakedata
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
+import com.hi.mvvmkotlin.MVVMKotlin
 import com.hi.mvvmkotlin.data.model.api.FakeDataBean
 import com.hi.mvvmkotlin.databinding.ItemFakedataBinding
 import com.hi.mvvmkotlin.ui.base.BaseViewHolder
@@ -50,6 +52,11 @@ class FakeDataAdapter @Inject constructor() :
 
         override fun onItemClick(blogUrl: String) {
             //TODO Handle your item click here
+            Toast.makeText(
+                MVVMKotlin.getInstance().applicationContext,
+                blogUrl,
+                Toast.LENGTH_SHORT
+            ).show()
         }
     }
 }

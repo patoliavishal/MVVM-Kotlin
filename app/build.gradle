@@ -36,8 +36,10 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation "androidx.core:core-ktx:$support_version"
     testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:rules:1.2.0'
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation "androidx.test.espresso:espresso-core:$espressoVersion"
+    androidTestImplementation 'com.android.support.test.espresso:espresso-contrib:3.0.2'
 
     //ANDROID DEFAULT
     implementation "androidx.appcompat:appcompat:$support_version"

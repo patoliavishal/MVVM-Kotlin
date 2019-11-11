@@ -27,9 +27,7 @@ class SignUpViewModel(
     }
 
     fun isCheckDetails(email: String, password: String, username: String) {
-        if (TextUtils.isEmpty(email) || !Patterns.EMAIL_ADDRESS.matcher(email).matches() &&
-            TextUtils.isEmpty(password) || password.length < 6 &&
-            TextUtils.isEmpty(username)
+        if (TextUtils.isEmpty(email) && TextUtils.isEmpty(password) && TextUtils.isEmpty(username)
         ) {
             navigator?.handleError(throwable = Throwable(MVVMKotlin.getInstance().getString(R.string.invalid_email_pass_username)))
         } else if (TextUtils.isEmpty(email) || !Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
