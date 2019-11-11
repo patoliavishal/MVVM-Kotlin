@@ -8,6 +8,8 @@ This MVVM architecture project created using Dagger2, Room, RxJava, Retrofit, Da
 3. Sign Up
 4. Data Listing
 
+[1]: ./art/mvvm_flow.gif
+
 ### Library reference resources:
 1. Dagger2: https://github.com/MindorksOpenSource/android-dagger2-example
 2. Room: https://developer.android.com/topic/libraries/architecture/room.html
@@ -19,7 +21,7 @@ This MVVM architecture project created using Dagger2, Room, RxJava, Retrofit, Da
 8. JSONPlaceholder: https://jsonplaceholder.typicode.com
 9. MVVM Android: https://github.com/MindorksOpenSource/android-mvvm-architecture
 
-If my example really helpful to you then please don't forgot to press `Star` icon.
+**If my example really helpful to you then please don't forgot to press **`Star`** icon.**
 
 # License
 ```license
@@ -38,5 +40,9 @@ See the License for the specific language governing permissions and
 limitations under the License.
 ```
 
-### Contributing to MVVM Architecture using Kotlin
-Just make pull request. You are in!
+## Contributing to MVVM Architecture using Kotlin
+1. Fork it  
+2. Create your feature branch (`git checkout -b my-new-feature`)  
+3. Commit your changes (`git commit -m 'Add some feature'`)  
+4. Push to the branch (`git push origin my-new-feature`)  
+5. **Create New Pull Request**
