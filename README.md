@@ -8,7 +8,12 @@ This MVVM architecture project created using Dagger2, Room, RxJava, Retrofit, Da
 3. Sign Up
 4. Data Listing
 
-[1]: ./art/mvvm_flow.gif
+<p align="center">
+  <img src="/art/splash.png" width="250">
+  <img src="/art/signin.png" width="250">
+  <img src="/art/signup.png" width="250">
+  <img src="/art/fakelist.png" width="250">
+</p>
 
 ### Library reference resources:
 1. Dagger2: https://github.com/MindorksOpenSource/android-dagger2-example
